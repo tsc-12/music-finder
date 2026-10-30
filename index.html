@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Beat Album</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        a.button {
+            display: inline-block;
+            background-color: #1db954;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px 0;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        a.button:hover {
+            background-color: #1ed760;
+        }
+        audio {
+            width: 100%;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Beat Album Title</h1>
+        <p>Listen and download my latest instrumentals below.</p>
+
+        <hr style="border: 0; border-top: 1px solid #333; margin: 30px 0;">
+
+        <h3>Track 1: Cool Beat</h3>
+        <audio controls src="beats/beat1.mp3"></audio>
+        <br>
+        <a class="button" href="beats/beat1.mp3" download>Download Track 1</a>
+
+        <h3>Full Album (.zip)</h3>
+        <p>Want everything at once?</p>
+        <a class="button" href="beats/album.zip" download>Download Full Album (.zip)</a>
+    </div>
+</body>
+</html>
